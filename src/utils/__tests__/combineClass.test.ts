@@ -5,4 +5,9 @@ describe('combineClass', () => {
         const result = combineClass('class-one');
         expect(result).toEqual('prefix-class-one');
     });
+
+    it('should trim space for class name', () => {
+        const result = combineClass('class-one ');
+        expect(result).toEqual('prefix-class-one');
+    });
 });

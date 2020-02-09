@@ -1,5 +1,5 @@
 const CLASS_PREFIX = "prefix-";
 
-export const combineClass = (className: string) => {
-    return CLASS_PREFIX + className;
+export const combineClass = (...className: string[]) => {
+    return (CLASS_PREFIX + className).trim();
 };
