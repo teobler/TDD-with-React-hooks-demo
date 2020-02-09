@@ -10,4 +10,9 @@ describe('combineClass', () => {
         const result = combineClass('class-one ');
         expect(result).toEqual('prefix-class-one');
     });
+
+    it('should combine two class name and second class name should not add prefix', () => {
+        const result = combineClass('class-one', 'class-two');
+        expect(result).toEqual('prefix-class-one class-two');
+    });
 });
