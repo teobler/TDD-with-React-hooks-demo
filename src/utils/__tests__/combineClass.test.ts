@@ -15,4 +15,9 @@ describe('combineClass', () => {
         const result = combineClass('class-one', 'class-two');
         expect(result).toEqual('prefix-class-one class-two');
     });
+
+    it('should combine three class name and tail class name should not add prefix', () => {
+        const result = combineClass('class-one', 'class-two', 'class-three');
+        expect(result).toEqual('prefix-class-one class-two class-three');
+    });
 });
