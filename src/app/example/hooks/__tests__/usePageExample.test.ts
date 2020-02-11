@@ -10,6 +10,10 @@ describe('usePageExample', () => {
         }));
     });
 
+    afterAll(() => {
+       mockGetUserId.mockReset();
+    });
+
     it('should trigger request with test string when click button', () => {
         const {usePageExample} = require('../usePageExample');
         const {result} = renderHook(() => usePageExample());
