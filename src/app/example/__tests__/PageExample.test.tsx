@@ -1,10 +1,10 @@
+import {PageExample} from "../PageExample";
 import {render} from "@testing-library/react";
-import {Content} from "../Content";
 import * as React from "react";
 
-describe('Content', () => {
+describe('PageExample', () => {
     it('should render correctly', () => {
-        const {container} = render(<Content/>);
+        const {container} = render(<PageExample/>);
         expect(container).toMatchSnapshot();
     });
 });
