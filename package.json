@@ -38,5 +38,8 @@
   },
   "devDependencies": {
     "@testing-library/react-hooks": "^3.2.1"
+  },
+  "peerDependencies": {
+    "react-test-renderer": "^16.12.0"
   }
 }
