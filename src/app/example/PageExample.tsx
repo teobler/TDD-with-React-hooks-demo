@@ -9,7 +9,7 @@ export const PageExample: React.FC<IPageExampleProps> = ({}) => {
 
     return (
         <div>
-            <form action="" onSubmit={onSubmit}>
+            <form onSubmit={() => onSubmit}>
                 <input type="text"/>
             </form>
             <button onClick={onClick}>test</button>
